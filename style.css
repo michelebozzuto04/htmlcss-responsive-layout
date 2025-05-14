@@ -119,15 +119,23 @@ img {
 }
 
 .card {
-    .row {
+    .container {
         box-shadow: 10px 10px 40px lightgray;
-    }
-
-    .receipt-details {
         background-color: white;
 
-        ul {
-            list-style: none;
+        .card-header {}
+
+        .card-body {
+            padding: 1.3rem;
+            font-size: 0.8rem;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            .row {
+                gap: 1rem 0;
+            }
         }
     }
 }
@@ -191,6 +199,7 @@ img {
     .main-header {
         justify-content: flex-start;
     }
+
 }
 
 @media screen and (min-width: 992px) {
