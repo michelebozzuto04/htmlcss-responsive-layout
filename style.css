@@ -108,11 +108,13 @@ img {
 
         .category {
             font-family: "Montserrat", sans-serif;
-            color: gray;
+            color: rgba(128, 128, 128, 0.5);
+            font-size: 0.9rem;
         }
 
         .title {
             font-size: 1.5rem;
+            font-weight: 800;
             color: var(--secondary-color-dark);
         }
     }
@@ -122,8 +124,6 @@ img {
     .container {
         box-shadow: 10px 10px 40px lightgray;
         background-color: white;
-
-        .card-header {}
 
         .card-body {
             padding: 1.3rem;
@@ -139,6 +139,33 @@ img {
         }
     }
 }
+
+.socials-section {
+    padding: 2rem 0;
+
+    .container {
+        justify-content: space-between;
+
+        .social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            width: 3rem;
+            height: 3rem;
+            background-color: white;
+            border-radius: 50%;
+
+            .social-name {
+                display: none;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -200,6 +227,16 @@ img {
         justify-content: flex-start;
     }
 
+    .socials-section {
+        .container {
+            .social-container {
+                width: 6rem;
+                height: 3rem;
+                border-radius: 30px;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -253,5 +290,20 @@ img {
 
     .container {
         max-width: 992px;
+    }
+
+    .socials-section {
+        .container {
+            .social-container {
+                width: auto;
+                padding: 0 1rem;
+                height: 3rem;
+                border-radius: 30px;
+
+                .social-name {
+                    display: inline;
+                }
+            }
+        }
     }
 }
