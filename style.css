@@ -90,6 +90,7 @@ img {
     max-width: 100%;
 }
 
+/* Header */
 .main-header {
     padding: 0.5rem 1rem;
     justify-content: center;
@@ -103,6 +104,7 @@ img {
     }
 }
 
+/* Title Section */
 .title-section {
     padding: 1.2rem 0;
 
@@ -116,14 +118,23 @@ img {
             font-size: 0.9rem;
         }
 
+        span {
+            display: block;
+        }
+
         .title {
             font-size: 1.5rem;
             font-weight: 800;
             color: var(--secondary-color-dark);
         }
+
+        .secondary {
+            display: none;
+        }
     }
 }
 
+/* Card Section */
 .card {
     .container {
         box-shadow: 10px 10px 40px lightgray;
@@ -150,6 +161,7 @@ img {
     }
 }
 
+/* Socials Section */
 .socials-section {
     padding: 2rem 0;
 
@@ -175,6 +187,7 @@ img {
     }
 }
 
+/* Banner Section */
 .banner-section {
     display: none;
     padding-bottom: 2rem;
@@ -184,8 +197,9 @@ img {
     }
 }
 
+/* Presentation Section */
 .presentation-section {
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 
     h2 {
         font-weight: 500;
@@ -212,6 +226,7 @@ img {
     }
 }
 
+/* Footer */
 .main-footer {
     background-color: var(--bg-secondary-color);
     color: white;
@@ -227,6 +242,10 @@ img {
         h3 {
             font-size: 0.9rem;
             font-weight: 600;
+        }
+
+        span {
+            text-align: center;
         }
     }
 
@@ -248,7 +267,7 @@ img {
 
 
 
-
+/* Responsive Rules */
 @media screen and (min-width: 768px) {
     .col-md-1 {
         width: calc(100% / 12 * 1);
@@ -304,6 +323,18 @@ img {
 
     .main-header {
         justify-content: flex-start;
+    }
+
+    .title-section {
+        .container {
+            .title {
+                font-size: 1.8rem;
+            }
+
+            .secondary {
+                display: block;
+            }
+        }
     }
 
     .socials-section {
