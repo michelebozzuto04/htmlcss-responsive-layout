@@ -14,8 +14,8 @@
 
 /* Utilities */
 .container {
-    max-width: 1200px;
-    width: 90%;
+    max-width: 480px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -83,6 +83,10 @@ body {
     background-color: var(--bg-primary-color);
 }
 
+img {
+    max-width: 100%;
+}
+
 .main-header {
     padding: 0.5rem 1rem;
     justify-content: center;
@@ -111,6 +115,20 @@ body {
         .title {
             font-size: 1.5rem;
             color: var(--secondary-color-dark);
+        }
+    }
+}
+
+.card {
+    .row {
+        box-shadow: 10px 10px 40px lightgray;
+    }
+
+    .receipt-details {
+        background-color: white;
+
+        ul {
+            list-style: none;
         }
     }
 }
@@ -166,6 +184,14 @@ body {
     .col-md-12 {
         width: calc(100% / 12 * 12);
     }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .main-header {
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -215,5 +241,9 @@ body {
 
     .col-lg-12 {
         width: calc(100% / 12 * 12);
+    }
+
+    .container {
+        max-width: 992px;
     }
 }
